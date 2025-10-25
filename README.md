@@ -44,13 +44,6 @@ I'm interested in data, systems intelligence, and how algorithms can help solve 
 
 ---
 
-## 💬 Contact Me
-
-- 📧 Email: *[enter your email]*
-- 🌐 LinkedIn / Telegram / Discord: *[add optional]*
-
----
-
 > 🧩 *"The best way to understand a complex system is to build it yourself."*
 > — Unknown Engineer
 
