@@ -1,46 +1,52 @@
 # Шамухаметов Руслан
 
 Студент. Ищу первую работу / стажировку: **Junior Python Backend**.
-Опыта коммерческой разработки пока нет — всё ниже это pet-проекты и самообучение.
+Коммерческого опыта пока нет — всё ниже это pet-проекты.
 
 ---
 
 ## Стек
 
-**Основное (пишу сам, понимаю что делаю):**
-- Python, FastAPI, Pydantic
-- SQLAlchemy (async), Alembic, PostgreSQL
-- pytest (интеграционные тесты)
+**Уверенно использую:**
+- Python 3.12, FastAPI, Pydantic
+- SQLAlchemy 2 (async), Alembic, PostgreSQL (+ pgvector)
+- Redis
+- pytest
 - Docker, Docker Compose
-- JWT, bcrypt
+- JWT, Argon2 / bcrypt, SSE-стриминг
 
-**Пробовал, но уверенным пользователем не назову:**
-NumPy / Pandas / scikit-learn, Unity (C#)
+**Пробовал, не эксперт:**
+Nginx (как reverse proxy), RAG / эмбеддинги, React + TypeScript
+(фронт для своих проектов пишу, но бэкенд — основная область)
 
 **В планах:** Kafka, Kubernetes
 
 ---
 
-## Что мне интересно
+## Чем интересно заниматься
 
-- Чистая архитектура, DDD, гексагональная — пробую применять в pet-проектах
-- Микросервисы, межсервисное взаимодействие
-- LLM / RAG в бэкенд-сервисах
+- Чистая архитектура, модульная декомпозиция
+- Сервисы с LLM / RAG на бэкенде (стриминг, фоновые воркеры)
+- Асинхронный Python и работа с БД под нагрузкой
 
 ---
 
 ## Проекты
 
-### [Nocturn](https://github.com/CaseyJohnson-RS/Nocturn) — в разработке
-Сервис заметок с LLM-агентом. Микросервисы, Outbox-паттерн, RAG.
-FastAPI · PostgreSQL · Docker Compose · Alembic
+### [Nocturn](https://github.com/CaseyJohnson-RS/Nocturn) — флагман
+Приложение для заметок с AI-ассистентом и семантическим поиском.
+Бэкенд: модульный монолит на FastAPI (модули `auth / notes / tags / rag / ai / admin`), фоновый воркер для эмбеддингов и очистки, RAG через pgvector, SSE-стриминг ответов LLM, JWT с refresh-токенами, rate limiting, Alembic-миграции, seed админа, тесты на pytest.
+Весь стек поднимается через `docker compose up`.
+
+**Python · FastAPI · PostgreSQL + pgvector · Redis · Alembic · Nginx · Docker**
 
 ### [Auth-Service-Hexagonal](https://github.com/CaseyJohnson-RS/Auth-Service-Hexagonal)
-Учебный сервис аутентификации: JWT, подтверждение email, refresh-токены, сброс пароля, журнал security-событий. Делал как разбор гексагональной архитектуры на практике.
-FastAPI · PostgreSQL (async) · Alembic · Docker
+Учебный сервис аутентификации — разбор гексагональной архитектуры на практике: JWT, refresh-токены, подтверждение email, сброс пароля, журнал security-событий.
+
+**FastAPI · PostgreSQL (async) · Alembic · Docker**
 
 ### [Symptoms](https://github.com/CaseyJohnson-RS/Symptoms)
-Unity-проект (C#). Побочный интерес.
+Unity-проект на C#. Побочный интерес.
 
 ---
 
