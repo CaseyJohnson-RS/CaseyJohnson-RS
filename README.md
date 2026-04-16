@@ -33,7 +33,7 @@ Nginx (как reverse proxy), RAG / эмбеддинги, React + TypeScript
 
 ## Проекты
 
-### [Nocturn](https://github.com/CaseyJohnson-RS/Nocturn) — флагман
+### [Nocturn](https://github.com/CaseyJohnson-RS/Nocturn)
 Приложение для заметок с AI-ассистентом и семантическим поиском.
 Бэкенд: модульный монолит на FastAPI (модули `auth / notes / tags / rag / ai / admin`), фоновый воркер для эмбеддингов и очистки, RAG через pgvector, SSE-стриминг ответов LLM, JWT с refresh-токенами, rate limiting, Alembic-миграции, seed админа, тесты на pytest.
 Весь стек поднимается через `docker compose up`.
