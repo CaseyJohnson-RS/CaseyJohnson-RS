@@ -1,52 +1,50 @@
-# 👋 Hello! My name is Ruslan
+# Шамухаметов Руслан
 
-I'm a student starting my career in machine learning (ML) and related fields.
-
-I'm interested in data, systems intelligence, and how algorithms can help solve real-world problems.
-
----
-
-## 🚀 About Me
-
-- 🎓 I'm learning the basics of **Data Science** and **Machine Learning**
-- 💻 I'm gradually mastering **Python**, **NumPy**, **Pandas**, **Matplotlib**, and **scikit-learn**
-- 📊 I'm experimenting with simple data projects—from analysis to prediction
-- 📚 I love learning new things and sharing what I've learned
+Студент. Ищу первую работу / стажировку: **Junior Python Backend**.
+Опыта коммерческой разработки пока нет — всё ниже это pet-проекты и самообучение.
 
 ---
 
-## 🧠 Currently studying
+## Стек
 
-- Fundamentals of Probability and Statistics
-- Linear Algebra for ML
-- Building and Evaluating Machine Learning Models
-- Fundamentals of Neural Networks
+**Основное (пишу сам, понимаю что делаю):**
+- Python, FastAPI, Pydantic
+- SQLAlchemy (async), Alembic, PostgreSQL
+- pytest (интеграционные тесты)
+- Docker, Docker Compose
+- JWT, bcrypt
 
----
+**Пробовал, но уверенным пользователем не назову:**
+NumPy / Pandas / scikit-learn, Unity (C#)
 
-## 🛠️ Technologies and Tools
-
-| Category | Technologies |
-|------------|-------------|
-| Languages ​​| Python |
-| Data Analysis | NumPy, Pandas, Matplotlib |
-| ML Libraries | scikit-learn, TensorFlow (under study) |
-| Tools | Jupyter Notebook, Git, VS Code |
+**В планах:** Kafka, Kubernetes
 
 ---
 
-## 📈 My Goals
+## Что мне интересно
 
-- Create my first ML project with real data
-- Master deep learning and neural networks
-- Participate in open-source data projects
-- Build a solid knowledge base for a future career in AI
-
----
-
-> 🧩 *"The best way to understand a complex system is to build it yourself."*
-> — Unknown Engineer
+- Чистая архитектура, DDD, гексагональная — пробую применять в pet-проектах
+- Микросервисы, межсервисное взаимодействие
+- LLM / RAG в бэкенд-сервисах
 
 ---
 
-⭐️ If you're interested in projects related to training and experimentation in ML, check back often; something new will be posted!
+## Проекты
+
+### [Nocturn](https://github.com/CaseyJohnson-RS/Nocturn) — в разработке
+Сервис заметок с LLM-агентом. Микросервисы, Outbox-паттерн, RAG.
+FastAPI · PostgreSQL · Docker Compose · Alembic
+
+### [Auth-Service-Hexagonal](https://github.com/CaseyJohnson-RS/Auth-Service-Hexagonal)
+Учебный сервис аутентификации: JWT, подтверждение email, refresh-токены, сброс пароля, журнал security-событий. Делал как разбор гексагональной архитектуры на практике.
+FastAPI · PostgreSQL (async) · Alembic · Docker
+
+### [Symptoms](https://github.com/CaseyJohnson-RS/Symptoms)
+Unity-проект (C#). Побочный интерес.
+
+---
+
+## Связь
+
+- Telegram — [@casey_johnson](https://t.me/casey_johnson)
+- VK — [casey_johnson](https://vk.com/casey_johnson)
