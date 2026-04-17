@@ -40,7 +40,7 @@ Nginx (как reverse proxy), RAG / эмбеддинги, React + TypeScript
 
 **Python · FastAPI · PostgreSQL + pgvector · Redis · Alembic · Nginx · Docker**
 
-### [Auth-Service-Hexagonal](https://github.com/CaseyJohnson-RS/Auth-Service-Hexagonal)
+### [Hexagonal-Auth-Service](https://github.com/CaseyJohnson-RS/Hexagonal-Auth-Service)
 Учебный сервис аутентификации — разбор гексагональной архитектуры на практике: JWT, refresh-токены, подтверждение email, сброс пароля, журнал security-событий.
 
 **FastAPI · PostgreSQL (async) · Alembic · Docker**
