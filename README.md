@@ -8,15 +8,16 @@
 ## Стек
 
 **Уверенно использую:**
-- Python 3.12, FastAPI, Pydantic
+- Python 3.12, FastAPI, Pydantic v2
 - SQLAlchemy 2 (async), Alembic, PostgreSQL (+ pgvector)
 - Redis
-- pytest
+- pytest (unit + интеграционные через httpx)
 - Docker, Docker Compose
-- JWT, Argon2 / bcrypt, SSE-стриминг
+- JWT, refresh-токены с ротацией, bcrypt, SSE-стриминг
+- RAG / эмбеддинги (pgvector, фоновые воркеры)
 
 **Пробовал, не эксперт:**
-Nginx (как reverse proxy), RAG / эмбеддинги, React + TypeScript
+Nginx (как reverse proxy), React + TypeScript
 (фронт для своих проектов пишу, но бэкенд — основная область)
 
 **В планах:** Kafka, Kubernetes
@@ -34,19 +35,23 @@ Nginx (как reverse proxy), RAG / эмбеддинги, React + TypeScript
 ## Проекты
 
 ### [Nocturn](https://github.com/CaseyJohnson-RS/Nocturn)
-Приложение для заметок с AI-ассистентом и семантическим поиском.
-Бэкенд: модульный монолит на FastAPI (модули `auth / notes / tags / rag / ai / admin`), фоновый воркер для эмбеддингов и очистки, RAG через pgvector, SSE-стриминг ответов LLM, JWT с refresh-токенами, rate limiting, Alembic-миграции, seed админа, тесты на pytest.
-Весь стек поднимается через `docker compose up`.
+Веб-приложение для заметок с AI-ассистентом, который умеет создавать и
+редактировать заметки из чата, и семантическим поиском.
+Бэкенд: FastAPI с модульной декомпозицией (`auth / notes / tags / rag / ai / admin`),
+фоновый воркер для эмбеддингов и очистки, RAG через pgvector, SSE-стриминг ответов
+LLM, JWT с refresh-токенами, rate limiting на Redis, CI/CD с автодеплоем.
+Живая демка + поднимается через `docker compose up`.
 
-**Python · FastAPI · PostgreSQL + pgvector · Redis · Alembic · Nginx · Docker**
+**Python · FastAPI · PostgreSQL + pgvector · Redis · Alembic · Nginx · Docker · CI/CD**
 
 ### [Hexagonal-Auth-Service](https://github.com/CaseyJohnson-RS/Hexagonal-Auth-Service)
-Учебный сервис аутентификации — разбор гексагональной архитектуры на практике: JWT, refresh-токены, подтверждение email, сброс пароля, журнал security-событий.
+Сервис аутентификации на гексагональной архитектуре: доменное ядро без зависимостей
+от фреймворков, порты на `Protocol`. Полный цикл — регистрация, подтверждение email,
+ротация refresh-токенов с детектом повторного использования, восстановление пароля,
+журнал security-событий через Redis. Оптимистичные блокировки, токены только в виде
+SHA-256-хэшей, покрытие тестами на всех уровнях, CI.
 
-**FastAPI · PostgreSQL (async) · Alembic · Docker**
-
-### [Symptoms](https://github.com/CaseyJohnson-RS/Symptoms)
-Unity-проект на C#. Побочный интерес.
+**FastAPI · PostgreSQL (async) · Redis · Alembic · Docker · pytest**
 
 ---
 
